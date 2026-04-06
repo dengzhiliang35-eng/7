@@ -8,170 +8,56 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background: #f5f5f5; }
 
-        .banner {
-            width: 100%;
-            display: block;
-        }
-        .banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+        .banner { width: 100%; display: block; }
+        .banner img { width: 100%; height: auto; display: block; }
 
-        .container {
-            background: #fff;
-            margin: 10px;
-            border-radius: 10px;
-            padding: 15px;
-        }
+        .container { background: #fff; margin: 10px; border-radius: 10px; padding: 15px; }
         
-        .棚头 { 
-            display: flex; 
-            gap: 15px; 
-            margin-bottom: 15px; 
-            align-items: center; 
-        }
-        .棚头 .img-box {
-            width: 120px; 
-            height: 120px;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #eee;
-        }
-        .棚头 .img-box img { 
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+        .棚头 { display: flex; gap: 15px; margin-bottom: 15px; align-items: center; }
+        .棚头 .img-box { width: 120px; height: 120px; border-radius: 8px; overflow: hidden; border: 1px solid #eee; }
+        .棚头 .img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
         .棚信息 { flex: 1; }
         .棚名 { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
         .棚ID { color: #666; font-size: 14px; margin-bottom: 10px; }
         .状态 { background: #00c853; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 14px; display: inline-block; }
         
-        .基础信息 { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 10px; 
-            margin: 15px 0;
-        }
-        .信息项 { 
-            background: #f5f5f5; 
-            padding: 12px; 
-            border-radius: 8px; 
-            font-size: 16px; 
-        }
-        .信息项 .label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 4px;
-            color: #333;
-        }
+        .基础信息 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; }
+        .信息项 { background: #f5f5f5; padding: 12px; border-radius: 8px; font-size: 16px; }
+        .信息项 .label { font-weight: bold; display: block; margin-bottom: 4px; color: #333; }
         
-        .模块 {
-            margin: 20px 10px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 10px;
-        }
-        .模块项 {
-            display: flex;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #eee;
-            text-decoration: none;
-            color: inherit;
-        }
-        .模块项:last-child { border-bottom: none; }
+        .模块 { margin: 20px 10px; padding: 15px; background: #fff; border-radius: 10px; }
+        .模块项 { display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; text-decoration: none; color: inherit; }
+        .模块-item:last-child { border-bottom: none; }
         .模块-icon { font-size: 24px; margin-right: 10px; }
         .模块-name { flex: 1; font-size: 18px; }
         .arrow { color: #999; font-size: 18px; }
 
-        .bottom-section {
-            background: #fff;
-            margin: 10px;
-            border-radius: 10px;
-            padding: 20px;
-        }
-
-        .园区大门图 {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .园区基础信息 {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-        .园区基础信息 strong {
-            font-size: 20px;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .园区介绍 {
-            font-size: 15px;
-            line-height: 1.8;
-            color: #333;
-            margin-bottom: 25px;
-        }
-
-        .导航链接 {
-            font-size: 17px;
-            font-weight: bold;
-            color: #00a653;
-            margin-bottom: 8px;
-            display: block;
-            text-decoration: none;
-        }
-        .导航地址 {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        .divider {
-            height: 1px;
-            background: #ddd;
-            margin: 25px 0;
-        }
-
-        .公众号区域 {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .公众号二维码 {
-            width: 100px;
-            height: 100px;
-            border-radius: 4px;
-        }
-        .公众号文字 {
-            flex: 1;
-        }
-        .公众号标题 {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-        .公众号标语 {
-            font-size: 13px;
-            color: #666;
-            line-height: 1.5;
-        }
+        .bottom-section { background: #fff; margin: 10px; border-radius: 10px; padding: 20px; }
+        .园区大门图 { width: 100%; border-radius: 8px; margin-bottom: 20px; }
+        .园区基础信息 { font-size: 16px; line-height: 1.8; margin-bottom: 15px; }
+        .园区基础信息 strong { font-size: 20px; display: block; margin-bottom: 5px; }
+        .园区介绍 { font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 25px; }
+        .导航链接 { font-size: 17px; font-weight: bold; color: #00a653; margin-bottom: 8px; display: block; text-decoration: none; }
+        .导航地址 { font-size: 14px; color: #666; margin-bottom: 25px; }
+        .divider { height: 1px; background: #ddd; margin: 25px 0; }
+        .公众号区域 { display: flex; align-items: center; gap: 15px; }
+        .公众号二维码 { width: 100px; height: 100px; border-radius: 4px; }
+        .公众号文字 { flex: 1; }
+        .公众号标题 { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
+        .公众号标语 { font-size: 13px; color: #666; line-height: 1.5; }
     </style>
 </head>
 <body>
 
+<!-- 修正路径：banner.jpg -->
 <div class="banner">
     <img src="banner.jpg" alt="山西爱农晋祠现代农业园">
 </div>
 
 <div class="container">
     <div class="棚头">
+        <!-- 修正路径：dapeng.jpg -->
         <div class="img-box">
             <img src="dapeng.jpg" alt="七号大棚实拍">
         </div>
@@ -183,26 +69,11 @@
     </div>
 
     <div class="基础信息">
-        <div class="信息项">
-            <span class="label">棚号</span>
-            7号棚
-        </div>
-        <div class="信息项">
-            <span class="label">种植户</span>
-            张毅炫
-        </div>
-        <div class="信息项">
-            <span class="label">种植作物</span>
-            甜瓜
-        </div>
-        <div class="信息项">
-            <span class="label">种植品种</span>
-            爱农蜜瓜
-        </div>
-        <div class="信息项">
-            <span class="label">定植时间</span>
-            2026年3月10号
-        </div>
+        <div class="信息项"><span class="label">棚号</span>7号棚</div>
+        <div class="信息项"><span class="label">种植户</span>张毅炫</div>
+        <div class="信息项"><span class="label">种植作物</span>甜瓜</div>
+        <div class="信息项"><span class="label">种植品种</span>爱农蜜瓜</div>
+        <div class="信息项"><span class="label">定植时间</span>2026年3月10号</div>
     </div>
 </div>
 
@@ -220,6 +91,7 @@
 </div>
 
 <div class="bottom-section">
+    <!-- 修正路径：gate.jpg -->
     <img src="gate.jpg" class="园区大门图" alt="园区大门">
 
     <div class="园区基础信息">
@@ -241,6 +113,7 @@
     <div class="divider"></div>
 
     <div class="公众号区域">
+        <!-- 修正路径：qrcode.jpg -->
         <img src="qrcode.jpg" class="公众号二维码" alt="公众号二维码">
         <div class="公众号文字">
             <div class="公众号标题">云上爱农公众号</div>
@@ -249,5 +122,7 @@
     </div>
 </div>
 
+</body>
+</html>
 </body>
 </html>
